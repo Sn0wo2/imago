@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 300" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f9efdb" stop-opacity=".65"/>
+      <stop offset=".38" stop-color="#f9efdb" stop-opacity=".24"/>
+      <stop offset=".78" stop-color="#f9efdb" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x=".5" y=".5" width="289" height="299" rx="16" fill="none" stroke="url(#light)"/>
+</svg>

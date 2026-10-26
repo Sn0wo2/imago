@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  width: 1024px;
+  height: 1880px;
+}
+
+body {
+  background: #0d0e12;
+  color: #fff;
+  font: 700 160px sans-serif;
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,26 @@
+[package]
+name = "imago"
+version = "0.0.0"
+edition = "2024"
+publish = true
+description = "Headless Blitz engine renderer with priority-based scheduling"
+
+[features]
+template = ["dep:minijinja", "dep:serde"]
+
+[dependencies]
+anyrender = "0.14.0"
+anyrender_vello_cpu = { version = "0.18.0", features = ["multithreading"] }
+blitz-dom = "0.3.0-beta.4"
+blitz-html = "0.3.0-beta.4"
+blitz-net = "0.3.0-beta.4"
+blitz-paint = "0.3.0-beta.4"
+blitz-traits = "0.3.0-beta.4"
+jpeg-encoder = "0.7.1"
+minijinja = { version = "3.0.3", features = ["serde"], optional = true }
+peniko = "0.6.1"
+png = "0.18.1"
+qoi = "0.4.1"
+serde = { version = "1.0.229", optional = true }
+tokio = { version = "1.54.1", features = ["macros", "rt", "sync", "time"] }
+webp = "0.3.1"

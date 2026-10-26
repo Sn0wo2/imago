@@ -1,0 +1,585 @@
+{
+  "title": "SkyBlock",
+  "accent": "Bingo Event",
+  "subtitle": "October 2026",
+  "columns": 5,
+  "cards": [
+    {
+      "title": "Operation: Ore",
+      "lines": [
+        [
+          {
+            "text": "Break ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "10M Ore",
+            "color": "#FFFF55"
+          },
+          {
+            "text": " Blocks.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ],
+      "progress": {
+        "value": "11,779,689",
+        "target": "10,000,000",
+        "percent": 100,
+        "label": "Community · 11,779,689 / 5 tiers"
+      },
+      "complete": true
+    },
+    {
+      "title": "Rock Solid",
+      "lines": [
+        [
+          {
+            "text": "Equip a ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Common ",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "or higher tiered ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Rock Pet",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Gunpowder Collector",
+      "lines": [
+        [
+          {
+            "text": "Reach ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "55,000 ",
+            "color": "#55FF55"
+          },
+          {
+            "text": "Gunpowder Collection.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Strongman",
+      "lines": [
+        [
+          {
+            "text": "Reach ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "120 ",
+            "color": "#FF5555"
+          },
+          {
+            "text": " Strength",
+            "color": "#FF5555"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Carry-On",
+      "lines": [
+        [
+          {
+            "text": "Craft a ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Large Backpack",
+            "color": "#AA00AA"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Sightseer",
+      "lines": [
+        [
+          {
+            "text": "Visit 7 different ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "public islands",
+            "color": "#55FF55"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Tarantula Broodfather",
+      "lines": [
+        [
+          {
+            "text": "Kill ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "10,000 Tarantula Broodfather ",
+            "color": "#55FF55"
+          },
+          {
+            "text": "of tier II ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "or higher.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ],
+      "progress": {
+        "value": "64,554",
+        "target": "10,000",
+        "percent": 100,
+        "label": "Community · 64,554 / 5 tiers"
+      },
+      "complete": true
+    },
+    {
+      "title": "Clay Ball Collector",
+      "lines": [
+        [
+          {
+            "text": "Reach ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "150,000 ",
+            "color": "#55FF55"
+          },
+          {
+            "text": "Clay Ball Collection.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Skill Average",
+      "lines": [
+        [
+          {
+            "text": "Reach a non-cosmetic Skill Average of ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "10",
+            "color": "#55FF55"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Pair Up!",
+      "lines": [
+        [
+          {
+            "text": "Find ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "5 Pairs ",
+            "color": "#5555FF"
+          },
+          {
+            "text": "in the ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Experimentation Table",
+            "color": "#5555FF"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Cheetah",
+      "lines": [
+        [
+          {
+            "text": "Obtain a ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Cheetah Talisman",
+            "color": "#AA00AA"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Warrior",
+      "lines": [
+        [
+          {
+            "text": "Obtain level ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "10",
+            "color": "#FFFF55"
+          },
+          {
+            "text": " in the ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Combat ",
+            "color": "#FFAA00"
+          },
+          {
+            "text": "Skill.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "KABOOM!",
+      "lines": [
+        [
+          {
+            "text": "Blow up ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "75k",
+            "color": "#FFFF55"
+          },
+          {
+            "text": " Crypts in The Catacombs.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ],
+      "progress": {
+        "value": "117,073",
+        "target": "75,000",
+        "percent": 100,
+        "label": "Community · 117,073 / 5 tiers"
+      },
+      "complete": true
+    },
+    {
+      "title": "Cocoa Beans Collector",
+      "lines": [
+        [
+          {
+            "text": "Reach ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "185,000 ",
+            "color": "#55FF55"
+          },
+          {
+            "text": "Cocoa Beans Collection.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Commission Master",
+      "lines": [
+        [
+          {
+            "text": "Complete ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "4 Commissions",
+            "color": "#FFFF55"
+          },
+          {
+            "text": " in the ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Dwarven Mines",
+            "color": "#00AA00"
+          },
+          {
+            "text": ", ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Crystal Hollows",
+            "color": "#AA00AA"
+          },
+          {
+            "text": ", or ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Glacite Tunnels",
+            "color": "#55FFFF"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "A Lost Cause",
+      "lines": [
+        [
+          {
+            "text": "Kill a ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Lost Adventurer",
+            "color": "#FF5555"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Powder Collector",
+      "lines": [
+        [
+          {
+            "text": "Collect 50,000 ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Mithril Powder",
+            "color": "#00AA00"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Love Is All Around",
+      "lines": [
+        [
+          {
+            "text": "Obtain a ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Mediocre Ring of Love",
+            "color": "#55FF55"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Scarf Offensive",
+      "lines": [
+        [
+          {
+            "text": "Defeat ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Scarf ",
+            "color": "#FF5555"
+          },
+          {
+            "text": "4,000 ",
+            "color": "#55FF55"
+          },
+          {
+            "text": "times.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ],
+      "progress": {
+        "value": "10,192",
+        "target": "4,000",
+        "percent": 100,
+        "label": "Community · 10,192 / 5 tiers"
+      },
+      "complete": true
+    },
+    {
+      "title": "Trouble is Brewing...",
+      "lines": [
+        [
+          {
+            "text": "Brew any level IV or higher potion.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Fashionable",
+      "lines": [
+        [
+          {
+            "text": "Wear ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "7 ",
+            "color": "#FFFF55"
+          },
+          {
+            "text": "unique Armor Sets.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Podium Position",
+      "lines": [
+        [
+          {
+            "text": "Obtain a ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Silver",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": " or higher ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Medal",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": " in Jacob's Farming Contest.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Titanic Reforger",
+      "lines": [
+        [
+          {
+            "text": "Apply the ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Titanic ",
+            "color": "#5555FF"
+          },
+          {
+            "text": "reforge to an item.",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Divan's Chance",
+      "lines": [
+        [
+          {
+            "text": "Place all 5 crystals in the Nucleus in the ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "Crystal Hollows",
+            "color": "#FF55FF"
+          },
+          {
+            "text": ".",
+            "color": "#AAAAAA"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Lucky Looter",
+      "lines": [
+        [
+          {
+            "text": "Loot ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "250k ",
+            "color": "#FFFF55"
+          },
+          {
+            "text": "drops with a chance of ",
+            "color": "#AAAAAA"
+          },
+          {
+            "text": "1% ",
+            "color": "#FFFF55"
+          },
+          {
+            "text": "or lower",
+            "color": "#AAAAAA"
+          }
+        ]
+      ],
+      "progress": {
+        "value": "245,748",
+        "target": "250,000",
+        "percent": 98,
+        "label": "Community · 245,748 / 5 tiers"
+      }
+    }
+  ]
+}

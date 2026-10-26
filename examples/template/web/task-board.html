@@ -1,0 +1,50 @@
+{% macro rich_text(runs) -%}
+  {%- for run in runs -%}
+    <span class="mc{% if run.color %} mc-{{ run.color }}{% endif %}{% if run.bold %} mc-bold{% endif %}{% if run.italic %} mc-italic{% endif %}{% if run.underline %} mc-underline{% endif %}{% if run.strike %} mc-strike{% endif %}">{{ run.text }}</span>
+  {%- endfor -%}
+{%- endmacro %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SkyBlock Bingo · {{ event }}</title>
+  <style>{% include "style.css" %}</style>
+</head>
+<body>
+  <main class="card" style="--page-width:{{ page_width }}px; --columns:{{ columns }}">
+    <img class="scene" src="{{ background }}" alt="">
+    <div class="veil"></div>
+    <div class="content">
+      <header>
+        <h1>SkyBlock <em>Bingo</em></h1>
+        <div class="event">{{ event }}</div>
+      </header>
+      <section class="board" aria-label="Bingo goals">
+        {% for card in cards %}
+        <article class="goal{% if card.community %} community{% endif %}{% if card.complete %} complete{% endif %}" data-goal-id="{{ card.id }}">
+          <img class="light-border" src="{{ border }}" alt="">
+          <h2>{{ rich_text(card.name) }}</h2>
+          <p>
+            {%- for line in card.description -%}
+              {{ rich_text(line) }}{% if not loop.last %}<br>{% endif %}
+            {%- endfor -%}
+          </p>
+          {% if card.community %}
+          <div class="goal-status">
+            <div class="progress-heading">
+              <strong>{{ card.progress }}</strong>
+              <span>/ {{ card.target }}</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Community progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ card.percent }}" style="--progress:{{ card.percent }}%">
+              <span></span>
+            </div>
+            <div class="tier-label">Community · {{ card.reached }} / {{ card.tier_count }} tiers</div>
+          </div>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </section>
+    </div>
+  </main>
+</body>
+</html>

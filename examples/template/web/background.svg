@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2100" viewBox="0 0 1600 2100">
+  <defs>
+    <linearGradient id="sky" x2=".85" y2="1">
+      <stop stop-color="#192d48"/>
+      <stop offset=".45" stop-color="#55656a"/>
+      <stop offset=".7" stop-color="#9c7463"/>
+      <stop offset="1" stop-color="#1b343c"/>
+    </linearGradient>
+    <radialGradient id="light">
+      <stop stop-color="#edba83" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#edba83" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rock" x2=".3" y2="1">
+      <stop stop-color="#556971"/>
+      <stop offset="1" stop-color="#1b2438"/>
+    </linearGradient>
+    <filter id="mist" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="5"/></filter>
+    <g id="island">
+      <path d="M-240 0-170 150-80 170 0 310 75 210 150 170 240 0Z" fill="url(#rock)"/>
+      <path d="M-240 0 0-70 240 0 0 70Z" fill="#5b786d"/>
+      <path d="M0 70 0 310 75 210 150 170 240 0Z" fill="#243a48" opacity=".75"/>
+      <path d="M-185 45-145 125-85 140-65 80ZM25 100 25 230 65 180 85 85Z" fill="#78838a" opacity=".3"/>
+      <path d="M-240 0 0 70 240 0" fill="none" stroke="#97a584" stroke-width="8"/>
+    </g>
+    <g id="tree">
+      <path d="M-9 0V-135H9V0Z" fill="#444f4b"/>
+      <path d="M-70-75V-130H-48V-175H-20V-205H25V-180H55V-135H75V-80Z" fill="#314b47"/>
+      <path d="M-70-130H-48V-175H-20V-205H25V-180H5V-155H-30V-110H-70Z" fill="#6d8871"/>
+    </g>
+  </defs>
+  <path fill="url(#sky)" d="M0 0H1600V2100H0Z"/>
+  <ellipse cx="1330" cy="760" rx="900" ry="900" fill="url(#light)"/>
+  <g fill="#fff0cc" opacity=".6">
+    <circle cx="1235" cy="330" r="2"/><circle cx="815" cy="150" r="2"/><circle cx="640" cy="305" r="2"/>
+    <circle cx="350" cy="100" r="2"/><circle cx="1440" cy="145" r="2"/><circle cx="1020" cy="240" r="2"/>
+  </g>
+  <g filter="url(#mist)" fill="#c9c3ad" opacity=".23">
+    <ellipse cx="150" cy="440" rx="500" ry="45"/><ellipse cx="1240" cy="650" rx="510" ry="55"/>
+    <ellipse cx="690" cy="1100" rx="790" ry="70"/><ellipse cx="1130" cy="1660" rx="750" ry="80"/>
+  </g>
+  <g filter="url(#soft)">
+    <g transform="translate(1250 470) scale(.8)"><use href="#island"/><use href="#tree" transform="translate(-80 -20)"/><use href="#tree" transform="translate(70 -15) scale(.7)"/></g>
+    <g transform="translate(190 950) scale(1.5)"><use href="#island"/><use href="#tree" transform="translate(-90 -10)"/><use href="#tree" transform="translate(45 -10) scale(1.2)"/></g>
+    <g transform="translate(1140 1480) scale(1.65)">
+      <use href="#island"/>
+      <path d="M-55-20V-210H-80V-260H-45V-240H-15V-260H15V-240H45V-260H80V-210H55V-20Z" fill="#87908b"/>
+      <path d="M10-20V-210H55V-20Z" fill="#536567"/>
+      <path d="M-18-20V-75Q0-105 18-75V-20Z" fill="#273d44"/>
+      <path d="M-13-125V-165Q0-185 13-165V-125Z" fill="#e1b981"/>
+      <use href="#tree" transform="translate(-145 -5) scale(.8)"/>
+      <use href="#tree" transform="translate(160 -5) scale(.6)"/>
+    </g>
+    <g transform="translate(200 1930) scale(.8)"><use href="#island"/><use href="#tree" transform="translate(0 -25)"/></g>
+  </g>
+  <g fill="none" stroke="#c9b590" opacity=".4" stroke-width="5">
+    <path d="M480 1000Q850 1150 950 1410" stroke-dasharray="18 15"/>
+    <path d="M480 960Q900 500 1070 510" stroke-dasharray="18 15"/>
+  </g>
+</svg>
