@@ -5,3 +5,14 @@
 /output
 Cargo.lock.bak
 /dist
+debug
+target
+dist
+node_modules/
+.zig-cache/
+*.rs.bk
+*.pdb
+mutants.out*/
+rustc-ice-*.txt
+.idea/
+.vscode/
