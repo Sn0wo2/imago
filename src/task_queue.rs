@@ -30,7 +30,7 @@ pub(crate) struct TaskQueue {
 
 impl TaskQueue {
     pub(crate) fn new() -> Self {
-        TaskQueue {
+        Self {
             inner: Mutex::new(Inner::default()),
             wake: Condvar::new(),
             seq: AtomicU64::new(0),

@@ -35,9 +35,9 @@ pub enum CaptureError {
 impl fmt::Display for CaptureError {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
-            CaptureError::Timeout => write!(f, "capture timed out"),
-            CaptureError::Cancelled => write!(f, "capture cancelled"),
-            CaptureError::Render(e) => write!(f, "capture failed: {e}"),
+            Self::Timeout => write!(f, "capture timed out"),
+            Self::Cancelled => write!(f, "capture cancelled"),
+            Self::Render(e) => write!(f, "capture failed: {e}"),
         }
     }
 }
@@ -92,7 +92,7 @@ impl CaptureOptions {
     }
 
     pub fn new(html: impl Into<String>) -> Self {
-        CaptureOptions {
+        Self {
             html: html.into(),
             base_url: None,
             size: CaptureSize::Viewport {
@@ -134,16 +134,16 @@ pub struct JobTicket {
 }
 
 impl Imago {
-    pub fn spawn(workers: usize) -> Imago {
+    pub fn spawn(workers: usize) -> Self {
         Self::spawn_with_config(ImagoConfig {
             workers,
             ..Default::default()
         })
     }
 
-    pub fn spawn_with_config(config: ImagoConfig) -> Imago {
+    pub fn spawn_with_config(config: ImagoConfig) -> Self {
         let task_queue = Arc::new(task_queue::TaskQueue::new());
-        Imago {
+        Self {
             inner: Arc::new(Inner {
                 _worker_guards: (0..config.workers.max(1))
                     .map(|_| {

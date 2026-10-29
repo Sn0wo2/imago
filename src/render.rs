@@ -35,7 +35,7 @@ pub(crate) struct Pipeline {
 
 impl Pipeline {
     pub(crate) fn new(config: ImagoConfig) -> Self {
-        Pipeline {
+        Self {
             config,
             net: Arc::new(Provider::new(None)),
             renderers: HashMap::new(),
@@ -140,10 +140,10 @@ impl Pipeline {
                         Default::default(),
                         color,
                         Default::default(),
-                        &Rect::new(0.0, 0.0, dev_w as f64, dev_h as f64),
+                        &Rect::new(0.0, 0.0, f64::from(dev_w), f64::from(dev_h)),
                     );
                 }
-                paint_scene(scene, &mut doc, spec.pixel_ratio as f64, dev_w, dev_h, 0, 0);
+                paint_scene(scene, &mut doc, f64::from(spec.pixel_ratio), dev_w, dev_h, 0, 0);
             },
             &mut buf,
         );

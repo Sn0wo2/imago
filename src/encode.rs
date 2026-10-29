@@ -50,9 +50,9 @@ pub(crate) fn encode(
                     .iter()
                     .flat_map(|px| {
                         [
-                            (px[0] as u32 + br * (255 - px[3] as u32) / 255).min(255) as u8,
-                            (px[1] as u32 + bg * (255 - px[3] as u32) / 255).min(255) as u8,
-                            (px[2] as u32 + bb * (255 - px[3] as u32) / 255).min(255) as u8,
+                            (u32::from(px[0]) + br * (255 - u32::from(px[3])) / 255).min(255) as u8,
+                            (u32::from(px[1]) + bg * (255 - u32::from(px[3])) / 255).min(255) as u8,
+                            (u32::from(px[2]) + bb * (255 - u32::from(px[3])) / 255).min(255) as u8,
                             255,
                         ]
                     })
@@ -69,9 +69,9 @@ pub(crate) fn encode(
                         [0, 0, 0, 0]
                     } else {
                         [
-                            ((px[0] as u32 * 255 + px[3] as u32 / 2) / px[3] as u32).min(255) as u8,
-                            ((px[1] as u32 * 255 + px[3] as u32 / 2) / px[3] as u32).min(255) as u8,
-                            ((px[2] as u32 * 255 + px[3] as u32 / 2) / px[3] as u32).min(255) as u8,
+                            ((u32::from(px[0]) * 255 + u32::from(px[3]) / 2) / u32::from(px[3])).min(255) as u8,
+                            ((u32::from(px[1]) * 255 + u32::from(px[3]) / 2) / u32::from(px[3])).min(255) as u8,
+                            ((u32::from(px[2]) * 255 + u32::from(px[3]) / 2) / u32::from(px[3])).min(255) as u8,
                             px[3],
                         ]
                     }
@@ -111,7 +111,7 @@ pub(crate) fn encode(
         Encoding::WebP { quality } => {
             let enc = webp::Encoder::from_rgba(&pixels, w, h);
             Ok(match quality {
-                Some(q) => enc.encode(*q as f32).to_vec(),
+                Some(q) => enc.encode(f32::from(*q)).to_vec(),
                 None => enc.encode_lossless().to_vec(),
             })
         }
