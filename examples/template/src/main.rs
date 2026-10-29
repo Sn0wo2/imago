@@ -1,4 +1,5 @@
 use std::error::Error;
+use std::io::Write;
 use std::path::PathBuf;
 use std::time::Duration;
 
@@ -22,9 +23,10 @@ async fn main() -> Result<(), Box<dyn Error>> {
     while let Some(arg) = args.next() {
         match arg.as_str() {
             "-h" | "--help" => {
-                println!(
+                writeln!(
+                    std::io::stdout(),
                     "Usage: cargo run --manifest-path examples/template/Cargo.toml -- [data.json] [--data PATH] [--web-dir DIR] [--output-dir DIR] [--pixel-ratio N] [--width PX] [--max-height PX] [--workers N] [--timeout SECONDS]"
-                );
+                )?;
                 return Ok(());
             }
             "--data" => {
@@ -87,7 +89,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     {
         return Err("cards must be a non-empty array".into());
     }
-    let page_width = width.unwrap_or((columns as u32 * 290 + 64).max(620));
+    let page_width = width.unwrap_or((u32::try_from(columns)? * 290 + 64).max(620));
     if page_width == 0 {
         return Err("width must be positive".into());
     }
@@ -117,9 +119,10 @@ async fn main() -> Result<(), Box<dyn Error>> {
     std::fs::write(output_dir.join("output.html"), &spec.html)?;
     let image = Imago::spawn(workers).submit(spec).result().await?;
     std::fs::write(output_dir.join("output.png"), image.data)?;
-    println!(
+    writeln!(
+        std::io::stdout(),
         "Saved output.html and output.png ({}×{})",
         image.width, image.height
-    );
+    )?;
     Ok(())
 }
